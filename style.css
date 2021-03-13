@@ -19,9 +19,15 @@ body {
     scroll-behavior: smooth;
 }
 
+img {
+    object-fit: cover;
+    object-position: center center;
+}
+
 #head {
+    z-index: -1;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     
     /* background-image: url('assets/mesh-gradient.png');
     background-color: rgba(255, 255, 255, 0.25);
@@ -118,7 +124,7 @@ body {
 }
 
 #down-arrow-div {
-    z-index: -1;
+    z-index: 0;
     position: fixed;
     width: 100%;
     margin-top: calc(60vh - 150px - 54px);
@@ -165,6 +171,7 @@ body {
 }
 
 #work {
+    z-index: 2;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -185,6 +192,11 @@ body {
 .work-1:hover, .work-2:hover, .work-3:hover, .work-4:hover, .work-5:hover {
     background-size: auto 103%;
     cursor: pointer;
+}
+
+.work-link {
+    color: black;
+    text-decoration: none;
 }
 
 
@@ -292,6 +304,11 @@ body {
     text-decoration: none;
 }
 
+
+
+        /* ------------  About page  ------------ */
+
+
 #about {
     width: 100%;
 }
@@ -368,6 +385,165 @@ body {
 #text-link {
     color: black;
 }
+
+
+
+
+        /* ------------  work pages  ------------ */
+
+#project-content {
+    padding: var(--workpadding);
+    padding-top: 0px;
+}
+
+#project-header {
+    width: fit-content;
+}
+
+#project-header {
+    width: fit-content;
+}
+
+#project-type {
+    margin-top: 15px;
+}
+
+#project-header {
+    margin-top: var(--workpadding);
+    font-size: 50px;
+}
+
+#project-headerpicture {
+    margin-left: calc(-1 * var(--workpadding));
+    width: 100vw;
+    z-index: -1;
+    margin-top: -80;
+}
+
+.project-section {
+    margin-top: var(--workpadding);
+}
+
+.project-section-split {
+    margin-top: var(--workpadding);
+    display: flex;
+}
+
+.project-section-split-left {
+    margin-right: 30px;
+    flex: 100%;
+}
+
+.project-section-split-right {
+    margin-left: 30px;
+    flex: 100%;
+}
+
+.project-section-header {
+    font-size: 24px;
+}
+
+.project-sectionpicture {
+    margin-top: 30px;
+    width: calc(100vw - 2 * var(--workpadding));
+}
+
+.project-section-description {
+    margin-top: 30px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.project-sectionvideo {
+    margin-top: 30px;
+    width: 100%;
+    min-height: fit-content;
+}
+
+#project-section-icondiv {
+    display: flex;
+    height: min-content;
+}
+
+.project-iconpicture {
+    margin-top: 30px;
+    width: 15vw;
+    margin-right: 30px;
+}
+
+#project-sideimages {
+    display: flex;
+}
+
+.project-sectionpicture-halfleft {
+    margin-top: 30px;
+    width: calc((100vw - 2 * var(--workpadding))/2);
+}
+
+.project-sectionpicture-halfright {
+    margin-top: 30px;
+    width: calc((100vw - 2 * var(--workpadding))/2);
+}
+
+#project-next {
+    margin-top: 100px;
+    display: flex;
+    width: calc(100% - var(--workpadding));
+    height: fit-content;
+    padding: 3vw;
+    background-color: #ebebeb;
+}
+
+#project-back {
+    /* height: min-content; */
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#next-left {
+    width: fit-content;
+    margin-right: auto;
+}
+
+#project-next-small-left {
+    width: fit-content;
+    margin: 0px;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+#project-next-big-left {
+    margin-top: 10px;
+    display: flex;
+    margin-left: auto;
+    height: min-content;
+    font-size: 24px;
+}
+
+#project-next-small {
+    width: fit-content;
+    margin: 0px;
+    font-size: 14px;
+    /* margin-left: auto; */
+}
+
+#project-next-big {
+    margin: 0px;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+#nextarrow-left {
+    transform: scale(-1, 1);
+    margin: 0px;
+}
+
+
+
+       /* ------------  mobile pages  ------------ */
+
 
 
 @media (max-width: 700px) {
@@ -477,6 +653,31 @@ body {
         width: calc(100% - 2px);
         height: 70vw;
         margin-top: 30px;
+    }
+
+    .project-section-split {
+        margin-top: var(--workpadding);
+        display: block;
+    }
+    
+    .project-section-split-left {
+        margin-right: 0px;
+        flex: 100%;
+    }
+    
+    .project-section-split-right {
+        margin-left: 0px;
+        margin-top: var(--workpadding);
+        flex: 100%;
+    }
+
+    #project-section-icondiv {
+        display: flex;
+        height: min-content;
+    }
+    
+    .project-iconpicture {
+        display: none;
     }
 
   }
