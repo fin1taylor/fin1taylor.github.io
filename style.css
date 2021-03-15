@@ -590,6 +590,14 @@ img {
         padding-top: 0px;
     }
 
+    .work-1 {
+        background-image: url("assets/debate/debate_app_cover700.png");
+    }
+    
+    .work-2 {
+        background-image: url("assets/uniquick/uniquick_app_cover700.png");
+    }
+
     #dailyuitext {
         background-color: rgba(255,255,254,0);
     }
