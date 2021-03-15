@@ -557,9 +557,14 @@ img {
         margin-left: 20px;
     }
 
-    /* #down-arrow-div {
-        margin-top: calc(63vh - 150px - 54px);
-    } */
+    #down-arrow-div {
+        animation: arrowanim 1s linear, arrowanimup 1.8s linear;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -9s);
+    
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
 
     #text-header-div {
         margin-top: calc(24vh - 98px);
