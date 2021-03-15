@@ -543,6 +543,51 @@ img {
 
 
 
+       /* ------------  404 page  ------------ */
+
+#text-header-404 {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20vh;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#text-header-404text {
+    margin-top: auto;
+    font-size: 200px;
+}
+
+#text-header-404description {
+    width: fit-content;
+    margin-top: auto;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#text-header-404action {
+    width: fit-content;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #6e6e6e;
+}
+
+.text404link {
+    color: #404040;
+}
+
+.text404link:hover {
+    color: black;
+}
+
+
+
+
+
        /* ------------  mobile pages  ------------ */
 
 
