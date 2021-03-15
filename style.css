@@ -564,6 +564,10 @@ img {
         margin-top: calc(24vh - 98px);
     }
 
+    #gradient {
+        background-image: url('assets/mesh-gradient700.png');
+    }
+
     #text-header {
         font-size: calc(8vw + 10px);
         padding-left: 4vw;
