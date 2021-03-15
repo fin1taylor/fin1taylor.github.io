@@ -127,9 +127,10 @@ img {
     z-index: 0;
     position: fixed;
     width: 100%;
-    margin-top: calc(60vh - 150px - 54px);
+    /* margin-top: calc(60vh - 150px - 54px); */
+    top: calc(100vh - 70px);
 
-    animation: arrowanim 1s linear;
+    animation: arrowanim 1s linear, arrowanimup 2.4s linear;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -9s);
 
@@ -190,7 +191,7 @@ img {
 }
 
 .work-1:hover, .work-2:hover, .work-3:hover, .work-4:hover, .work-5:hover {
-    background-size: auto 103%;
+    background-size: auto 103.5%;
     cursor: pointer;
 }
 
@@ -556,9 +557,9 @@ img {
         margin-left: 20px;
     }
 
-    #down-arrow-div {
+    /* #down-arrow-div {
         margin-top: calc(63vh - 150px - 54px);
-    }
+    } */
 
     #text-header-div {
         margin-top: calc(24vh - 98px);
@@ -697,9 +698,14 @@ img {
   @keyframes arrowanim {
       to {
           opacity: 0;
-          margin-top: 20px;
       }
   }
+
+  @keyframes arrowanimup {
+    to {
+        top: 0px;
+    }
+  }   
 
   @keyframes gradientanim {
       to {
