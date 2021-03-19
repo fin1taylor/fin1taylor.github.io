@@ -174,20 +174,20 @@ img {
 }
 
 .work-1, .work-2, .work-3, .work-4, .work-5 {
-    background-color: grey;
+    background-color: white;
     background-size: auto 100%;
     -moz-transition: all .5s;
     -webkit-transition: all .5s;
     transition: all .5s;
     background-position: center center;
     border-radius: 10px;
-    filter: grayscale(15%);
+    /* filter: grayscale(15%); */
 }
 
 .work-1:hover, .work-2:hover, .work-3:hover, .work-4:hover, .work-5:hover {
     background-size: auto 103.5%;
     cursor: pointer;
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 
 .work-link {
@@ -199,29 +199,54 @@ img {
 .work-1 {
     background-image: url("assets/debate/debate_app_cover.png");
     height: calc(55vw - 90px);
+    background-color: rgba(178, 143, 245, 0.4);
+}
+
+.work-1:hover {
+    background-color: rgba(178, 143, 245, 1);
 }
 
 .work-2 {
     margin-top: var(--workpadding);
     background-image: url("assets/uniquick/uniquick_app_cover.png");
     height: calc(55vw - 90px);
+    background-color: rgba(255, 103, 92, 0.4);
+}
+
+.work-2:hover {
+    background-color: rgba(255, 103, 92, 1);
 }
 
 .work-3 {
     background-image: url("assets/guardian/guardianangel_cover.png");
     height: calc(((2*(55vw - 90px) + var(--workpadding)) - (2 * var(--workpadding)))/3);
+    background-color: rgba(104, 142, 255, 0.4);
+}
+
+.work-3:hover {
+    background-color: rgba(104, 142, 255, 1);
 }
 
 .work-4 {
     margin-top: var(--workpadding);
     background-image: url("assets/badcalc/calc_app_cover.png");
     height: calc(((2*(55vw - 90px) + var(--workpadding)) - (2 * var(--workpadding)))/3);
+    background-color: rgba(243, 226, 114, 0.5);
+}
+
+.work-4:hover {
+    background-color: rgba(243, 226, 114, 1);
 }
 
 .work-5 {
     margin-top: var(--workpadding);
     background-image: url("assets/dailyui/dailyui_cover.png");
     height: calc(((2*(55vw - 90px) + var(--workpadding)) - (2 * var(--workpadding)))/3);
+    background-color: rgba(96, 255, 254, 0.4);
+}
+
+.work-5:hover {
+    background-color: rgba(96, 255, 254, 0.8);
 }
 
 #dailyuitext {
