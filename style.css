@@ -1,10 +1,12 @@
 :root {
     --workpadding: 6vw;
+    --projectpadding: 10vw;
 }
 
   @media (max-width: 850px) {
     :root {
         --workpadding: 4vw;
+        --projectpadding: 4vw;
     }
 }
   
@@ -352,6 +354,7 @@ img {
     height: fit-content;
     margin-top: auto;
     margin-bottom: 30px;
+    border-radius: 0px;
     /* padding: 2vw; */
 }
 
@@ -379,6 +382,7 @@ img {
     background-position: 50% 85%;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0px;
 }
 
 #contact {
@@ -388,6 +392,7 @@ img {
     font-size: 20px;
     height: fit-content;
     margin-top: auto;
+    border-radius: 0px;
 }
 
 #contact-header {
@@ -413,7 +418,7 @@ img {
         /* ------------  work pages  ------------ */
 
 #project-content {
-    padding: var(--workpadding);
+    padding: var(--projectpadding);
     padding-top: 0px;
 }
 
@@ -430,23 +435,23 @@ img {
 }
 
 #project-header {
-    margin-top: var(--workpadding);
+    margin-top: var(--projectpadding);
     font-size: 50px;
 }
 
 #project-headerpicture {
-    margin-left: calc(-1 * var(--workpadding));
+    margin-left: calc(-1 * var(--projectpadding));
     width: 100vw;
     z-index: -1;
     margin-top: -80;
 }
 
 .project-section {
-    margin-top: var(--workpadding);
+    margin-top: var(--projectpadding);
 }
 
 .project-section-split {
-    margin-top: var(--workpadding);
+    margin-top: var(--projectpadding);
     display: flex;
 }
 
@@ -466,7 +471,7 @@ img {
 
 .project-sectionpicture {
     margin-top: 30px;
-    width: calc(100vw - 2 * var(--workpadding));
+    width: calc(100vw - 2 * var(--projectpadding));
 }
 
 .project-section-description {
@@ -498,21 +503,24 @@ img {
 
 .project-sectionpicture-halfleft {
     margin-top: 30px;
-    width: calc((100vw - 2 * var(--workpadding))/2);
+    width: calc((100vw - 2 * var(--projectpadding))/2);
 }
 
 .project-sectionpicture-halfright {
     margin-top: 30px;
-    width: calc((100vw - 2 * var(--workpadding))/2);
+    width: calc((100vw - 2 * var(--projectpadding))/2);
 }
 
 #project-next {
-    margin-top: 100px;
+    margin-top: 0px;
     display: flex;
-    width: calc(100% - var(--workpadding));
+    width: calc(100% - (3 * var(--workpadding)));
     height: fit-content;
     padding: 3vw;
     background-color: #ebebeb;
+    margin-right: 0;
+    margin-left: var(--workpadding);
+    margin-bottom: var(--workpadding);
 }
 
 #project-back {
