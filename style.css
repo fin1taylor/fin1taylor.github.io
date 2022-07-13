@@ -5,8 +5,8 @@
 
   @media (max-width: 850px) {
     :root {
-        --workpadding: 4vw;
-        --projectpadding: 4vw;
+        --workpadding: 8vw;
+        --projectpadding:10vw;
     }
 }
   
@@ -17,8 +17,10 @@ html {
 body {
     width: 100%;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Inter, Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
+    scroll-snap-align: top;
+    scroll-snap-type: y mandatory;
 }
 
 img {
@@ -26,10 +28,16 @@ img {
     object-position: center center;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+  
+
 #head {
     z-index: -1;
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: rgba(255, 255, 255, 0);
     scroll-behavior: smooth;
 }
@@ -102,46 +110,29 @@ img {
 #text-header-div {
     display: block;
     width: min-content;
-    margin-top: calc(26vh - 98px);
+    margin-top: calc(25vh - 98px);
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 80vw;
+    width: 70vw;
 }
 
 #text-header {
     width: fit-content;
-    text-align: center;
-    font-size: calc(4vw + 10px);
+    text-align: left;
+    font-size: 5em;
+    font-weight: 600;
+    text-align: left;
+}
+
+#text-sub {
+    width: fit-content;
+    font-size: 1.5em;
     font-weight: 400;
     text-align: left;
-    padding-left: 6.5vw;
-}
-
-#down-arrow-div {
-    z-index: 0;
-    position: fixed;
-    width: 100%;
-    top: calc(100vh - 70px);
-
-    animation: arrowanim 1s linear, arrowanimup 2.4s linear;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -9s);
-
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-}
-
-#arrow-link-div {
-    width: min-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-#down-arrow {
-    display: block;
-    padding: 15px;
+    margin-top: 20px;
+    opacity: 60%;
+    padding-left: 2px;
 }
 
 #gradient {
@@ -150,10 +141,10 @@ img {
     left: 0;
     z-index: -2;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
 
     background-image: url('assets/mesh-gradient.png');
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.30);
     background-blend-mode: lighten;
     background-size: cover;
 
@@ -171,13 +162,72 @@ img {
     display: flex;
     flex-wrap: wrap;
     scroll-behavior: smooth;
-    
+    scroll-snap-stop: always;
     background-color: rgba(255, 255, 255, 1);
+}
+
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    margin-top: -25vh;
+
+    animation: contentanimup 2s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -9s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#projects-head {
+    display: flex;
+    align-items: center;
+    margin-left: -5px;
+    margin-bottom: 7vh;
+}
+
+#main-projects-title {
+    font-size: 2em;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+#fun-projects-head {
+    display: flex;
+    align-items: center;
+    margin-left: -5px;
+    margin-top: calc(2*var(--workpadding));
+    margin-bottom: var(--workpadding);
+
+}
+
+#down-arrow1 {
+    transform: rotate(0deg);
+    animation: arrow1rotate 2s linear;
+    animation-play-state: paused;
+    animation-delay: calc((var(--scroll)) * -11s);
+    /* animation-delay: calc(var(--scroll) * -11s); */
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#down-arrow2 {
+    transform: rotate(0deg);
+    animation: arrow1rotate 2s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -11.7647s + 7.0588s);
+    /* animation-delay: calc((var(--scroll)-(0.64)) * -11s); */
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 .work-1, .work-2, .work-3, .work-4, .work-5 {
     background-color: white;
     background-size: auto 100%;
+    height: 600px;
     -moz-transition: all .5s;
     -webkit-transition: all .5s;
     transition: all .5s;
@@ -197,11 +247,9 @@ img {
     text-decoration: none;
 }
 
-
 .work-1 {
     background-image: url("assets/debate/debate_app_cover.png");
-    height: calc(55vw - 90px);
-    background-color: rgba(178, 143, 245, 0.4);
+    background-color: rgba(224,211,251, 1);
 }
 
 .work-1:hover {
@@ -211,7 +259,6 @@ img {
 .work-2 {
     margin-top: var(--workpadding);
     background-image: url("assets/uniquick/uniquick_app_cover.png");
-    height: calc(55vw - 90px);
     background-color: rgba(255, 103, 92, 0.4);
 }
 
@@ -221,8 +268,8 @@ img {
 
 .work-3 {
     background-image: url("assets/guardian/guardianangel_cover.png");
-    height: calc(((2*(55vw - 90px) + var(--workpadding)) - (2 * var(--workpadding)))/3);
     background-color: rgba(104, 142, 255, 0.4);
+    margin-top: var(--workpadding);
 }
 
 .work-3:hover {
@@ -232,7 +279,6 @@ img {
 .work-4 {
     margin-top: var(--workpadding);
     background-image: url("assets/badcalc/calc_app_cover.png");
-    height: calc(((2*(55vw - 90px) + var(--workpadding)) - (2 * var(--workpadding)))/3);
     background-color: rgba(243, 226, 114, 0.5);
 }
 
@@ -243,7 +289,6 @@ img {
 .work-5 {
     margin-top: var(--workpadding);
     background-image: url("assets/dailyui/dailyui_cover.png");
-    height: calc(((2*(55vw - 90px) + var(--workpadding)) - (2 * var(--workpadding)))/3);
     background-color: rgba(96, 255, 254, 0.4);
 }
 
@@ -274,15 +319,9 @@ img {
 }
 
 .worktext {
+    margin-top: auto;
     padding: 40px;
-}
-
-.leftwork {
-    padding-top: calc(55vw - 90px - 90px);
-}
-
-.rightwork {
-    padding-top: calc(((2*(55vw - 90px) + var(--workpadding)) - (2 * var(--workpadding)))/3 - 90px);
+    padding-top: 510px;
 }
 
 .col {
@@ -295,7 +334,7 @@ img {
 #footer {
     display: flex;
     padding: calc(var(--workpadding) + 1px);
-    padding-top: 0px;
+    padding-top: calc(2*var(--workpadding));
     background-color: rgba(255, 255, 255, 1);
 }
 
@@ -346,27 +385,31 @@ img {
     margin-right: var(--workpadding);
 }
 
+#about-right {
+    width: 80%;
+    margin-left: var(--workpadding);
+}
+
 #about-me {
-    background-color: #ebebeb;
+    /* background-color: #ebebeb; */
     width: 90%;
-    padding: 2vw;
+    /* padding: 2vw; */
     margin-right: var(--workpadding);
     height: fit-content;
     margin-top: auto;
-    margin-bottom: 30px;
     border-radius: 0px;
     /* padding: 2vw; */
 }
 
 #about-header {
-    font-size: 30px;
+    font-size: 2em;
     font-weight: 500;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #about-desc {
-    font-size: 17px;
+    font-size: 1.1em;
     font-weight: 500;
     margin-top: auto;
     line-height: 1.6;
@@ -376,7 +419,7 @@ img {
 
 #about-photo {
     width: 100%;
-    /* height: calc((50vw - (var(--workpadding)) - ((var(--workpadding))/2))*0.75); */
+    height: 400px;
     background-image: url('assets/IMG_0821.jpg');
     background-color: grey;
     background-position: 50% 85%;
@@ -385,22 +428,34 @@ img {
     border-radius: 0px;
 }
 
-#contact {
-    background-color: #ebebeb;
-    width: 90%;
-    padding: 2vw;
-    font-size: 20px;
-    height: fit-content;
-    margin-top: auto;
+#about-photo2 {
+    width: 100%;
+    height: 400px;
+    background-image: url('assets/IMG_3834.jpeg');
+    background-color: grey;
+    background-position: 50% 85%;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 0px;
 }
 
+#contact {
+    margin: var(--workpadding);
+    background-color: #ebebeb;
+    padding: 2vw;
+    font-size: 20px;
+    height: fit-content;
+    border-radius: 10px;
+    margin-bottom: 0px;
+
+}
+
 #contact-header {
-    font-size: 30px;
+    font-size: 2em;
 }
 
 #contact-email {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #about-link {
@@ -630,15 +685,6 @@ img {
         margin-left: 20px;
     }
 
-    #down-arrow-div {
-        animation: arrowanim 1s linear, arrowanimup 1.8s linear;
-        animation-play-state: paused;
-        animation-delay: calc(var(--scroll) * -9s);
-    
-        animation-iteration-count: 1;
-        animation-fill-mode: both;
-    }
-
     #text-header-div {
         margin-top: calc(24vh - 98px);
     }
@@ -649,7 +695,6 @@ img {
 
     #text-header {
         font-size: calc(8vw + 10px);
-        padding-left: 4vw;
     }
 
     .col {
@@ -667,8 +712,8 @@ img {
     }
 
     .work-1, .work-2, .work-3, .work-4, .work-5 {
-        height: 130vw;
-        margin-bottom: 5%;
+        height: 500px;
+        margin-bottom: var(--workpadding);
         margin-top: 0px;
         padding-top: 0px;
     }
@@ -687,6 +732,7 @@ img {
 
     .worktext {
         padding: 30px;
+        padding-top: 415px;
     }
 
     .leftwork, .rightwork {
@@ -773,20 +819,21 @@ img {
 
   }
 
-  @keyframes arrowanim {
-      to {
-          opacity: 0;
-      }
-  }
 
-  @keyframes arrowanimup {
+  @keyframes contentanimup {
     to {
-        top: 0px;
+        margin-top: 15vh;
     }
   }   
 
   @keyframes gradientanim {
       to {
           top: -120px;
+      }
+  }
+
+  @keyframes arrow1rotate {
+      to {
+          transform: rotate(-90deg);
       }
   }
