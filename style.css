@@ -338,6 +338,13 @@ a {
     background-color: rgba(255, 255, 255, 1);
 }
 
+#about-footer {
+    display: flex;
+    padding: calc(var(--workpadding) + 1px);
+    padding-top: calc(var(--workpadding));
+    background-color: rgba(255, 255, 255, 1);
+}
+
 /* #footer-left {
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>❤️</text></svg>") 8 0,auto;
 } */
@@ -387,18 +394,18 @@ a {
 
 #about-right {
     width: 80%;
+    height: 400px;
     margin-left: var(--workpadding);
 }
 
 #about-me {
-    /* background-color: #ebebeb; */
     width: 90%;
-    /* padding: 2vw; */
     margin-right: var(--workpadding);
-    height: fit-content;
+    height: 400px;
     margin-top: auto;
     border-radius: 0px;
-    /* padding: 2vw; */
+    vertical-align: middle;
+    /* text-align: center; */
 }
 
 #about-header {
@@ -411,10 +418,10 @@ a {
 #about-desc {
     font-size: 1.1em;
     font-weight: 500;
-    margin-top: auto;
     line-height: 1.6;
-    margin-bottom: 0px;
-    /* margin-right: 2vw; */
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 150px;
 }
 
 #about-photo {
