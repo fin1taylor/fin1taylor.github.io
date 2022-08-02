@@ -296,14 +296,14 @@ a {
     background-color: rgba(96, 255, 254, 0.8);
 }
 
-#dailyuitext {
+/* #dailyuitext {
     border-radius: 5px;
     padding-left: 3px;
     padding-right: 3px;
     text-shadow: 0px 0px 5px rgba(255,255,255,1);
     background-color: rgba(255,255,254,0.4);
     width: fit-content;
-}
+} */
 
 /* [class*="work-"] {
     padding: 20%;
