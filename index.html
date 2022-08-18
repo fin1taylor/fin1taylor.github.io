@@ -98,11 +98,12 @@
     </div>
     <script>
       $(window).on('load', function () {
-        $('#loading').hide();
+        $('#loading').fadeOut(300);
+        $('#loading-image').animate({height: '+=40px', width: '+=40px'},300);
       }) 
     </script>
   </body>
   <div id="loading">
-    <img id="loading-image" src="assets/favicon.png" alt="Loading..." />
+    <img id="loading-image" src="assets/loading.png" alt="Loading..." />
   </div>
 </html>
