@@ -8,6 +8,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/73a867db5e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <script src="script.js"></script>
@@ -95,5 +96,13 @@
         </a>
       </div>
     </div>
+    <script>
+      $(window).on('load', function () {
+        $('#loading').hide();
+      }) 
+    </script>
   </body>
+  <div id="loading">
+    <img id="loading-image" src="assets/favicon.png" alt="Loading..." />
+  </div>
 </html>
