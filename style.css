@@ -279,22 +279,22 @@ a {
 
 .work-2 {
     margin-top: var(--workpadding);
-    background-image: url("assets/uniquick/uniquick_app_cover.png");
+    background-image: url("assets/uniquick/uniquick_cover.png");
     background-color: rgba(255, 103, 92, 0.4);
 }
 
 .work-2:hover {
-    background-color: rgba(255, 103, 92, 1);
+    background-color: rgb(227, 86, 76);
 }
 
 .work-3 {
-    background-image: url("assets/guardian/guardianangel_cover.png");
-    background-color: rgba(104, 142, 255, 0.4);
+    background-image: url("assets/taylored/TayloredCover.png");
+    background-color: rgba(237, 228, 221, 0.4);
     margin-top: var(--workpadding);
 }
 
 .work-3:hover {
-    background-color: rgba(104, 142, 255, 1);
+    background-color: rgba(225, 214, 195, 1);
 }
 
 .work-4 {
@@ -355,14 +355,14 @@ a {
 #footer {
     display: flex;
     padding: calc(var(--workpadding) + 1px);
-    padding-top: calc(2*var(--workpadding));
+    padding-top: calc(var(--workpadding));
     background-color: rgba(255, 255, 255, 1);
 }
 
-#about-footer {
+#home-footer {
     display: flex;
     padding: calc(var(--workpadding) + 1px);
-    padding-top: calc(var(--workpadding));
+    padding-top: calc(2*var(--workpadding));
     background-color: rgba(255, 255, 255, 1);
 }
 
@@ -753,7 +753,7 @@ a {
     }
     
     .work-2 {
-        background-image: url("assets/uniquick/uniquick_app_cover700.png");
+        background-image: url("assets/uniquick/uniquick_cover700.png");
     }
 
     #dailyuitext {
