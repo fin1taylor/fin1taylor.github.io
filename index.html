@@ -12,7 +12,7 @@
   </head>
   <body>
     <script src="script.js"></script>
-    <div id="gradient"></div>
+    <div id="gradient"><canvas width="2" height="2"></canvas></div>
     <div id="head">
       <div id="navbar">
         <div id="nav-left"><a class="cool-link" href="">Fin Taylor</a></div>
@@ -97,10 +97,12 @@
       </div>
     </div>
     <script>
+      $("body").css("overflow", "hidden");
       $(window).on('load', function () {
         $('#loading').fadeOut(300);
         $('#loading-image').animate({height: '+=40px', width: '+=40px'},300);
-      }) 
+        $("body").css("overflow", "scroll");
+      })
     </script>
   </body>
   <div id="loading">

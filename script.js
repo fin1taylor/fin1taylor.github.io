@@ -21,8 +21,6 @@
 
 var leftgear = document.getElementById("leftgear"),
 rightgear = document.getElementById("rightgear");
-    
-// to use the script *without* anti-jank, set the event to "scroll" and remove the anonymous function.
 
 window.addEventListener("optimizedScroll", function() {
   document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
