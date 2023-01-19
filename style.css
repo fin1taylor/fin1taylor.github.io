@@ -507,8 +507,9 @@ canvas {
         /* ------------  work pages  ------------ */
 
 #project-content {
-    padding: var(--projectpadding);
+    /* padding: var(--projectpadding); */
     padding-top: 0px;
+    width: 100%;
 }
 
 #project-header {
@@ -517,10 +518,14 @@ canvas {
 
 #project-header {
     width: fit-content;
+    margin-left: var(--projectpadding);
+    margin-right: var(--projectpadding);
 }
 
 #project-type {
     margin-top: 15px;
+    margin-left: var(--projectpadding);
+    margin-right: var(--projectpadding);
 }
 
 #project-header {
@@ -529,34 +534,65 @@ canvas {
 }
 
 #project-headerpicture {
-    margin-left: calc(-1 * var(--projectpadding));
+    /* margin-left: calc(-1 * var(--projectpadding)); */
     width: 100vw;
     z-index: -1;
     margin-top: -80;
 }
 
 .project-section {
-    margin-top: var(--projectpadding);
+    /* margin-top: var(--projectpadding); */
+    padding: var(--projectpadding);
+    /* padding-top: calc(var(--projectpadding) / 2);
+    padding-bottom: calc(var(--projectpadding) / 2); */
+}
+
+.project-subsection {
+    margin-top: calc(var(--projectpadding) / 2);
+}
+
+.greyback {
+    background-color: #ebebeb;
+}
+
+.beigeback {
+    background-color: #FAF4EF;
+}
+
+.bottomsection {
+    margin-bottom: var(--projectpadding);
 }
 
 .project-section-split {
     margin-top: var(--projectpadding);
     display: flex;
+    padding-bottom: var(--projectpadding);
 }
 
 .project-section-split-left {
     margin-right: 30px;
     flex: 100%;
+    padding-left: var(--projectpadding);
 }
 
 .project-section-split-right {
     margin-left: 30px;
     flex: 100%;
+    padding-right: var(--projectpadding);
 }
 
 .project-section-header {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
+}
+
+.project-section-subheader {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.topsubheader {
+    margin-top: calc(var(--projectpadding) / 4 * -1);
 }
 
 .project-sectionpicture {
@@ -616,6 +652,7 @@ canvas {
     margin-right: 0;
     margin-left: var(--workpadding);
     margin-bottom: var(--workpadding);
+    border-radius: 10px;
 }
 
 #project-back {
