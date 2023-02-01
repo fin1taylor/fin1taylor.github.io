@@ -617,6 +617,12 @@ canvas {
     min-height: fit-content;
 }
 
+#frame {
+    margin-top: 30px;
+    width: 100%;
+    height: 700px;
+}
+
 #project-section-icondiv {
     display: flex;
     height: min-content;
