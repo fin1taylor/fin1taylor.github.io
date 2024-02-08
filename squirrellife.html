@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin Taylor - Flight OS</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div id="head">
+      <div id="navbar">
+        <div id="nav-left"><a class="cool-link" href="https://fintaylor.design">Fin Taylor</a></div>
+        <div id="nav-right">
+          <div id="home-button"><a class="cool-link" href="https://fintaylor.design/#work">work</a></div>
+          <div id="about-button"><a class="cool-link" href="about">about</a></div>
+        </div>
+      </div>
+      <div id="project-content">
+        <picture>
+          <source media="(min-width:700px)" srcset="assets/squirrel/header-min.png">
+          <img id="project-headerpicture" src="assets/squirrel/header-min.png" alt="">
+        </picture>
+        <div id="project-header">Squirrel Life</div>
+        <div id="project-type">GameBoy Advance Game</div>
+        <div class="project-section">
+            <div class="project-section-header">Project Overview</div>
+            <div class="project-section-description">For a computer science class I took at Georgia Tech, I was tasked with creating a game for the GameBoy Advanced. The game I ended up making was heavily inspired by Terraria. In this game you are a squirrel, just trying to go about life, climbing up trees and collecting nuts. As you progress through the game you can get more and more tools to interact more and more with your environment. The project was coded in C, entirely from scratch apart from a few files that dealt with communicating with the GBA hardware. I coded the game engine from scratch and created all the art for the game. 
+            </div>
+        </div> 
+        <div class="project-section greyback">
+          <div class="project-section-header">Environment</div>
+          <div class="project-subsection">
+            <div class="project-section-subheader">Auto-Generated Landscape</div>
+            <div id="project-sideimages" style="margin-top: 30px;">
+              <picture>
+                <img class="project-sectionpicture-halfleft" src="assets/squirrel/landscape0-min.png" alt="">
+              </picture>
+              <picture>
+                <img class="project-sectionpicture-halfright" src="assets/squirrel/landscape1-min.png" alt="">
+              </picture>
+            </div>
+            <div id="project-sideimages">
+              <picture>
+                <img class="project-sectionpicture-halfleft" src="assets/squirrel/landscape2-min.png" alt="">
+              </picture>
+              <picture>
+                <img class="project-sectionpicture-halfright" src="assets/squirrel/landscape3-min.png" alt="">
+              </picture>
+            </div>
+            <div class="project-section-description">The terrain is randomly generated every time you start a new game with trees, flowers and bushes randomly placed as well. There are landmarks like waterfalls and lakes randomly placed around the map as well. Making the game unique every time you start again!</div>
+          </div>
+          <div class="project-subsection">
+            <div class="project-section-subheader">Caves</div>
+            <div id="project-sideimages" style="margin-top: 30px;">
+              <picture>
+                <img class="project-sectionpicture-halfleft" src="assets/squirrel/cave1-min.png" alt="">
+              </picture>
+              <picture>
+                <img class="project-sectionpicture-halfright" src="assets/squirrel/cave2-min.png" alt="">
+              </picture>
+            </div>
+            <div class="project-section-description">The map also contains tunnel systems that are semi-randomly created and linked together. The screen dims when players go underground, making it slightly more difficult to navigate and adding intrigue to the caves below.</div>
+          </div>
+          <div class="project-subsection">
+            <div class="project-section-subheader">Day/Night Cycle and Seasons</div>
+            <picture>
+              <img class="project-sectionpicture" src="assets/squirrel/night-min.png" alt="">
+            </picture>
+            <picture>
+              <img class="project-sectionpicture" src="assets/squirrel/spring-min.png" alt="">
+            </picture>
+            <div class="project-section-description">The game cycles from night to day, at night the screen dims just like going underground. Players have to be more prudent since it is harder to see the bobcats that will try to eat you. As players pass more time in the game, the seasons change as well, cycling through summer, fall, winter, and spring as seen above.</div>
+          </div>
+        </div>
+        <div class="project-section">
+          <div class="project-section-header">Gameplay</div>
+          <div class="project-subsection">
+            <div class="project-section-subheader">Collecting Resources</div>
+            <picture>
+              <img class="project-sectionpicture" src="assets/squirrel/collectNut-min.png" alt="">
+            </picture>
+            <div class="project-section-description">The initial goal of the game is to just start collecting nuts and sticks, the two most basic resources. Players can climb up into the trees and break off a stick as well as collect the nuts from the tree. Nuts and sticks can only be collected from a tree once every few days in the game.</div>
+          </div>
+          <div class="project-subsection">
+            <div class="project-section-subheader">Trading</div>
+            <div id="project-sideimages" style="margin-top: 30px;">
+              <picture>
+                <img class="project-sectionpicture-halfleft" src="assets/squirrel/tradeFarmer-min.png" alt="">
+              </picture>
+              <picture>
+                <img class="project-sectionpicture-halfright" src="assets/squirrel/tradeKnight-min.png" alt="">
+              </picture>
+            </div>
+            <div id="project-sideimages">
+              <picture>
+                <img class="project-sectionpicture-halfleft" src="assets/squirrel/trademiner0-min.png" alt="">
+              </picture>
+              <picture>
+                <img class="project-sectionpicture-halfright" src="assets/squirrel/tradeMiner2-min.png" alt="">
+              </picture>
+            </div>
+            <div class="project-section-description">With nuts and sticks players can start to trade with other squirrels they encounter throughout the map. There are many different squirrels with different professions and some require rare items in order to trade with them. By trading with different squirrels, players can acquire tools like a hoe, a pickaxe and a sword.</div>
+          </div>
+          <div class="project-subsection">
+            <div class="project-section-subheader">Fighting</div>
+            <picture>
+              <img class="project-sectionpicture" src="assets/squirrel/fight-min.png" alt="">
+            </picture>
+            <div class="project-section-description">Players can defend themselves from the bobcats from an early stage by using sticks to hit them back, but the sticks won’t cause much damage. Once players are able to trade for a sword they can really start defending themselves and hunting the bobcats down.</div>
+          </div>
+          <div class="project-subsection">
+            <div class="project-section-subheader">Farming</div>
+            <div id="project-sideimages" style="margin-top: 30px;">
+              <picture>
+                <img class="project-sectionpicture-halfleft" src="assets/squirrel/plant-min.png" alt="">
+              </picture>
+              <picture>
+                <img class="project-sectionpicture-halfright" src="assets/squirrel/eat-min.png" alt="">
+              </picture>
+            </div>
+            <div class="project-section-description">Players can trade nuts for seeds from a farming squirrel which they can then plant things. Players can plant nuts, which grow into new trees, or the seeds which grow into strawberries. Players can then eat the strawberries to regenerate health and they can either be planted in the farmer squirrel’s farm or anywhere once they are able to acquire a hoe.</div>
+          </div>
+        </div>
+        <div class="project-section greyback bottomsection">
+          <div class="project-section-header">Endless Possibilities</div>
+          <div id="project-sideimages" style="margin-top: 30px;">
+            <picture>
+              <img class="project-sectionpicture-halfleft" src="assets/squirrel/dig-min.png" alt="">
+            </picture>
+            <picture>
+              <img class="project-sectionpicture-halfright" src="assets/squirrel/build-min.png" alt="">
+            </picture>
+          </div>
+          <div class="project-section-description">The final feature I added into the game was the mining and building, unlocking the possibility for players to create wherever they wanted and to build homes for themselves to stay safe from the bobcats. Players can use a pickaxe to mine the dirt away and then use that same dirt to build all kinds of different structures.</div>
+        </div>
+      </div>
+    </div>
+    <div id="project-next">
+      <!-- <div id="project-back"><a class="cool-link" href="index.html#work">Back to All Work</a></div> -->
+      <div id="next-left"><p id="project-next-small-left">Previous Project</p><a class="cool-link" href="badcalculator"><div id="project-next-big-left"><p id="nextarrow-left">➔</p><p style="margin: 0px; margin-left: 8px;">Bad Calculator</p></div></a></div>
+      <div><p id="project-next-small">Next Project</p><p id="project-next-big"><a class="cool-link" href="debateapp">Debate App ➔</a></p></div>
+    </div>
+    <div id="footer">
+      <div id="footer-left">©Fin Taylor - SF & ATL</div>
+      <div id="footer-right">
+        <a class="footer-link" href="https://drive.google.com/file/d/17JbZwb-HB9JHdeWqqpss71oGjD_BoZSk/view?usp=sharing" title="Resume" target="_blank">
+          <div class="footer-item cool-link" id="resume-button">Resume</div>
+        </a>
+        <a class="footer-link" href="https://www.linkedin.com/in/fintaylor/" title="LinkedIn" target="_blank">
+          <div class="footer-item cool-link" id="linkedin-button">LinkedIn</div>
+        </a>
+        <a class="footer-link" href="mailto:fin@fintaylor.design" title="fin@fintaylor.design" target="_blank">
+          <div class="footer-item cool-link" id="insta-button">Email</div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

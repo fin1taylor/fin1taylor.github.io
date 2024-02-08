@@ -313,7 +313,7 @@ canvas {
 
 .work-5 {
     margin-top: var(--workpadding);
-    background-image: url("assets/flightos/cover.webp");
+    background-image: url("assets/squirrel/cover.png");
     background-color: rgba(107, 137, 255, 0.4);
 }
 
@@ -336,6 +336,8 @@ canvas {
 
 .desc {
     margin-top: auto;
+    font-size: 16px;
+    opacity: 60%;
 }
 
 .title {
@@ -639,12 +641,10 @@ canvas {
 }
 
 .project-sectionpicture-halfleft {
-    margin-top: 30px;
     width: calc((100vw - 2 * var(--projectpadding))/2);
 }
 
 .project-sectionpicture-halfright {
-    margin-top: 30px;
     width: calc((100vw - 2 * var(--projectpadding))/2);
 }
 
