@@ -273,12 +273,12 @@ canvas {
 }
 
 .work-1 {
-    background-image: url("assets/debate/debate_app_cover.png");
-    background-color: rgba(224,211,251, 1);
+    background-image: url("assets/taylored/TayloredCover.png");
+    background-color: rgb(239, 228, 222);
 }
 
 .work-1:hover {
-    background-color: rgba(178, 143, 245, 1);
+    background-color: rgb(208, 199, 181);
 }
 
 .work-2 {
@@ -292,13 +292,13 @@ canvas {
 }
 
 .work-3 {
-    background-image: url("assets/taylored/TayloredCover.png");
-    background-color: rgba(237, 228, 221, 0.4);
+    background-image: url("assets/debate/debate_app_cover.png");
+    background-color: rgba(224,211,251, 1);
     margin-top: var(--workpadding);
 }
 
 .work-3:hover {
-    background-color: rgba(225, 214, 195, 1);
+    background-color: rgba(178, 143, 245, 1);
 }
 
 .work-4 {
@@ -314,11 +314,11 @@ canvas {
 .work-5 {
     margin-top: var(--workpadding);
     background-image: url("assets/squirrel/cover.png");
-    background-color: rgba(107, 137, 255, 0.4);
+    background-color: rgba(107, 220, 255, 0.7);
 }
 
 .work-5:hover {
-    background-color: rgba(107, 137, 255, 0.9);
+    background-color: rgba(107, 220, 255, 1);
 }
 
 /* #dailyuitext {
@@ -804,14 +804,6 @@ canvas {
         margin-bottom: var(--workpadding);
         margin-top: 0px;
         padding-top: 0px;
-    }
-
-    .work-1 {
-        background-image: url("assets/debate/debate_app_cover700.png");
-    }
-    
-    .work-2 {
-        background-image: url("assets/uniquick/uniquick_cover700.png");
     }
 
     #dailyuitext {
