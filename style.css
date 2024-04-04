@@ -273,7 +273,7 @@ canvas {
 }
 
 .work-1 {
-    background-image: url("assets/taylored/TayloredCover.png");
+    background-image: url("assets/taylored/TayloredCover.webp");
     background-color: rgb(239, 228, 222);
 }
 
@@ -292,7 +292,7 @@ canvas {
 }
 
 .work-3 {
-    background-image: url("assets/debate/debate_app_cover.png");
+    background-image: url("assets/debate/debate_app_cover.webp");
     background-color: rgba(224,211,251, 1);
     margin-top: var(--workpadding);
 }
